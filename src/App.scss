@@ -9,21 +9,6 @@ body {
   font-family: "Lato", "Noto Sans TC", sans-serif;
 }
 
-.nav-group {
-  display: flex;
-}
-
-.nav-icon {
-  flex-flow: row wrap;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-#nav-darkmode-toggle {
-  display: none;
-}
-
-
 h2 {
   font-size: 2rem;
   margin: 1.5rem 0 0.5rem;

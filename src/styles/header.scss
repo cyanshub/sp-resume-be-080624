@@ -26,5 +26,19 @@ header {
     .nav-link {
       color: var(--nav-link-color);
     }
+
+    .nav-group {
+      display: flex;
+
+      .nav-icon {
+        flex-flow: row wrap;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+
+      #nav-darkmode-toggle {
+        display: none;
+      }
+    }
   }
 }
