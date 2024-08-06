@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 // UI元件
-const Header = () => {
+const Header = ({onChange}) => {
   return (
     <header>
     <nav>
@@ -15,7 +15,10 @@ const Header = () => {
             深色模式
           </StyledSpan>
         </label>
-        <input type="checkbox" id="nav-darkmode-toggle" />
+        <input 
+          type="checkbox" 
+          id="nav-darkmode-toggle"
+          onChange={(event)=>onChange?.(event)} />
       </div>
     </nav>
     </header>

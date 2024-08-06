@@ -5,14 +5,20 @@ import {
   InfoSection,
   SkillSection,
 } from '../components/ResumePageComponents';
+import { handleChange } from '../handlers/ResumePageHandlers/handleChange';
 
 // 載入資料
 import { sps } from '../../data.json';
 
+
 const ResumePage = () => {
+
+  // event handler
+  const onChange = (event) => handleChange(event)
+
   return (
     <>
-      <Header />
+      <Header onChange={onChange} />
       <main>
         <InfoSection />
         <DescriptionSection />
