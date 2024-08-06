@@ -1,12 +1,17 @@
 // 載入低階模組彙整器, 使用 as * 免除輸入引用低階模組的名稱
-@use "./styles/index" as *;
+@use './styles/index' as *;
 
 // 基礎及共用樣式
 html,
 body {
   color: var(--main-text-color);
   background-color: var(--main-background-color);
-  font-family: "Lato", "Noto Sans TC", sans-serif;
+  font-family: 'Lato', 'Noto Sans TC', sans-serif;
+}
+
+#root {
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
 }
 
 h2 {
