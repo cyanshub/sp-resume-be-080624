@@ -1,12 +1,20 @@
-import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import HomePage from './pages/HomePage';
+import ResumePage from './pages/ResumePage';
+
+// 定義專案基礎路徑
+const basename = import.meta.env.VITE_PUBLIC_URL;
 
 function App() {
-
   return (
-    <>
-     <h1>Hello World</h1>
-    </>
-  )
+    <BrowserRouter basename={basename}>
+      <Routes>
+        <Route path="/resumes" element={<ResumePage />}></Route>
+        <Route path="*" element={<HomePage />}></Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
