@@ -26,7 +26,7 @@ const InfoSection = () => {
       </div>
 
       <div className="title">
-        後端工程師 | 擅長技術：Node.js/Express、MySQL、JavaScript、HTML、CSS、Bootstrap、Git
+        後端工程師 | 擅長：Node.js/Express、MySQL、JavaScript、HTML、CSS、Bootstrap、Git
       </div>
     </div>
   );
